@@ -1,0 +1,70 @@
+* {
+	font-family: "Lucida Grande";
+}
+
+#gameContainer, #pastScores {
+	width: 80%;
+    margin: auto;
+}
+
+.row {
+    height: 27px;
+    justify-content: center;
+    padding: 0
+}
+
+.column {
+	border: 1px solid #ce9d9d45;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+}
+
+#startGame {
+	width: 120px;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+.up , .down {
+    margin: auto !important;
+}
+
+.middle {
+    display: flex;
+    justify-content: center
+}
+
+#startGame:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.scroll {
+    height: 100%;
+}
+
+.gameContainer {
+    height: 100%;
+}
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+.game-over-text {
+    position: absolute;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+}

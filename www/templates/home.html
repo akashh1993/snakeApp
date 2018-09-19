@@ -1,0 +1,14 @@
+<ion-view view-title="Snake">
+    <ion-content>
+        <div id="gameContainer" class="gameContainer" on-swipe="swipeEvent($event)" ng-click="startGame()">
+            <h3>Score: {{score}}</h3>
+            <div class="board-container">
+                <h3 class="game-over-text" ng-style="{'display': isGameOver ? 'block' : 'none'}">Game Over</h3>
+                <h3 class="game-over-text" ng-style="{'display': !isGameOver && !gameRunning ? 'block' : 'none'}">Start</h3>
+                <div class="row" ng-repeat="row in board">
+                    <div class="column" ng-style="{'background-color': setStyling($parent.$index, $index)}" ng-repeat="column in row track by $index"></div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
